@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Schedule Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💪 Gym Schedule Tracker</h1>
+            <p>Track your workouts by muscle group</p>
+        </header>
+
+        <!-- Day Selector Navigation Tabs -->
+        <nav class="day-selector">
+            <button class="day-btn active" data-day="Monday">Mon</button>
+            <button class="day-btn" data-day="Tuesday">Tue</button>
+            <button class="day-btn" data-day="Wednesday">Wed</button>
+            <button class="day-btn" data-day="Thursday">Thu</button>
+            <button class="day-btn" data-day="Friday">Fri</button>
+            <button class="day-btn" data-day="Saturday">Sat</button>
+            <button class="day-btn" data-day="Sunday">Sun</button>
+        </nav>
+
+        <!-- Workout Content Card -->
+        <main class="workout-card">
+            <div class="focus-header">
+                <h2 id="day-title">Monday</h2>
+                <span id="muscle-focus">Focus: Chest & Triceps</span>
+            </div>
+
+            <!-- Exercises Container -->
+            <ul id="exercise-list" class="exercise-list">
+                <!-- JavaScript will dynamically inject exercises here -->
+            </ul>
+
+            <!-- Add Exercise Form -->
+            <form id="add-exercise-form">
+                <h3>Add New Exercise</h3>
+                <div class="form-group">
+                    <input type="text" id="exercise-name" placeholder="Exercise Name (e.g., Push-ups)" required>
+                    <input type="text" id="exercise-sets-reps" placeholder="Sets x Reps (e.g., 3 sets x 10 reps)" required>
+                    <button type="submit" class="add-btn">Add Exercise</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
